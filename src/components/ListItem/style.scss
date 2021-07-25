@@ -1,7 +1,88 @@
 .list_item {
     width: 225px;
     height: 120px;
-    background-color: #fff;
+    background-color: var(--main-color );
     color: black;
-    margin-right: 5px;
+    margin-right: 5px; 
+    overflow: hidden;
+    cursor: pointer;
+    color: #fff;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover {
+        width: 325px;
+        height: 300px;
+        position: absolute;
+        top: -150px;
+        --webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+        box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+        border-radius: 5px;
+
+        img {
+            height: 140px;
+        }
+
+        .list_itemInfo {
+            display: flex;
+            flex-direction: column;
+            padding: 10PX 10px;
+            width: 100%;
+
+            .list_itemIcons {
+                display: flex;
+                margin-bottom: 10px;
+
+                .icon {
+                    border: 2px solid #fff;
+                    margin-right: 10px;
+                    padding: 5px;
+                    border-radius: 50%;
+                }
+            }
+
+            .list__itemInfoTop {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                font-size: 14px;
+                font-weight: 600;
+                color: grey;
+
+                span {
+                    margin-right: 10px;
+                }
+
+                .limit {
+                    border: 1px solid grey;
+                    padding: 1px 3px;
+                }
+            }
+
+            .description {
+                margin-top: 10px;
+                font-size: 13px;
+                padding-bottom: 10px;
+                width: 100%;
+            }
+
+            .list__itemGender {
+                font-size: 13px;
+                color: lightgray;
+            }
+        }
+    }
 }
