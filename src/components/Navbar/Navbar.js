@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { ArrowDropDown, Notifications, Search } from '@material-ui/icons'
 import './style.scss'
 
