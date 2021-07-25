@@ -1,9 +1,11 @@
+import Home from './pages/Home/Home';
 
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <h2> Netflix UI Cone </h2>
+      <Home />
     </div>
   );
 }
