@@ -1,5 +1,7 @@
-import Home from './pages/Home/Home';
-import Watch from './pages/Watch/Watch';
+// import Home from './pages/Home/Home';
+// import Register from './pages/Register/Register'
+import Login from './pages/Login/Login'
+// import Watch from './pages/Watch/Watch';
 
 import './App.scss';
 
@@ -7,7 +9,7 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Login />
     </div>
   );
 }
